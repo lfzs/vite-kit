@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "vite serve --mode serve",
+    "build:dev": "vite build --mode dev",
+    "build:test": "vite build --mode test",
+    "build:pre": "vite build --mode pre",
+    "build:prod": "vite build --mode prod",
+    "lint": "eslint --max-warnings 0 \"**/*.{js,jsx,vue,cjs,mjs}\"",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,cjs,mjs}": "eslint --max-warnings 0"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@jzfe/eslint-config-vue": "^1.5.0",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.0",
+    "less": "^4.1.3",
+    "lint-staged": "^13.1.0",
+    "vite": "^4.0.2"
+  }
+}
