@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+  word-break: break-word;
+  font-family:
+    'system -apple-system',
+    BlinkMacSystemFont,
+    'Helvetica Neue',
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
+    Arial,
+    sans-serif;
+  color: @color;
+  background-color: @bg;
+  // 默认行高设为 1.15
+  line-height: 1.15;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  // 隐藏 ie11 滚动条
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  // 去除所有元素的滚动条
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  color: @placeholder;
+}

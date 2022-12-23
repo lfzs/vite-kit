@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <title>Vite + Vue</title>
+    <% CDN_CSS.forEach(path => { %><link href="<%= path %>" /><% }) %>
+    <% CDN_JS.forEach(path => { %><script src="<%= path %>"></script><% }) %>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+  <body class="min-height-fullscreen" />
 </html>

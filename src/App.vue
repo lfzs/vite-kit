@@ -1,11 +1,8 @@
-<script setup>
-const title = 'Hello Vite!'
-</script>
-
 <template>
-{{ title }}
+<HelloVite />
 </template>
 
-<style lang="less" scoped>
-
-</style>
+<script setup>
+import { log } from '@/utils/common'
+log(import.meta.env)
+</script>
