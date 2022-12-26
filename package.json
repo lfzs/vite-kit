@@ -20,12 +20,14 @@
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.28",
     "url-parse": "^1.5.10",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@jzfe/eslint-config-vue": "^1.6.1",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
     "eslint": "^8.30.0",
     "husky": "^8.0.2",
     "less": "^4.1.3",

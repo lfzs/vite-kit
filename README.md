@@ -27,7 +27,9 @@ vite + vue3 脚手架
 ## TODO
 
 - cdn 链接外置 https://github.com/vitejs/vite/issues/544 https://www.npmjs.com/package/rollup-plugin-external-globals 对 cjs 有效，esm 无效
-- 接入 vue-router
 - 接入组件库
 - 引入 vueuse
 - 添加各种常用 utils
+- 封装 axios
+- 引入微前端
+- 多入口打包

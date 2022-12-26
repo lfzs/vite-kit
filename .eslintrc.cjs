@@ -5,4 +5,7 @@ module.exports = {
   extends: [
     '@jzfe/eslint-config-vue',
   ],
+  globals: {
+    $utils: 'readonly',
+  },
 }

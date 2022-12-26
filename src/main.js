@@ -1,25 +1,8 @@
 import { createApp as createCSRApp } from 'vue'
 import { createPinia } from 'pinia'
-
-function createStore() {
-  const store = createPinia()
-  return store
-}
-
-function createApp(rootComponent, rootProps = {}, rootContainer) {
-  const app = createCSRApp(rootComponent, rootProps)
-  const store = createStore()
-  app.use(store)
-
-  app.mount(rootContainer)
-  return app
-}
-
-export {
-  createStore,
-  createApp,
-}
-
+import { createWebHistory } from 'vue-router'
+import { routes } from '@/router/routes'
+import { createRouter } from '@/router'
 import '@/static/style/class/index.less'
 import '@/static/style/reset.less'
 import App from '@/App.vue'
@@ -32,4 +15,8 @@ window.$utils = {
   log,
 }
 
-createApp(App, {}, 'body')
+const app = createCSRApp(App)
+const store = createPinia()
+const router = createRouter({ routes, history: createWebHistory() })
+app.use(store).use(router)
+app.mount('body')

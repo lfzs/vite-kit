@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { CDN_CSS, CDN_JS } from './src/constants/cdn'
@@ -8,6 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       vue(),
+      vueJsx(),
       Components(),
       createHtmlPlugin({
         entry: 'src/main.js',
